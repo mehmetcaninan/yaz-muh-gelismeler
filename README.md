@@ -6,3 +6,5 @@ Projenin amacı banka işlemlerini simüle edebilmektir.
 İçerisinde (şimdilik) dört adet class bulunmaktadır.
 Bu class'lar müşteri ve bankaların işlemlerini metodlar yoluyla yapmaya çalışırlar.
 Metodlar tamamlandığında para çek-para yatır-para gönder gibi işlemleri yapabilmeli aynı zamanda müşteri isim, soyisim,(bağlı olduğu)şube, iban, bakiye ve borç gibi bilgileride kaydedebilmelidir.
+(GÜNCELLEME)
+Repo içerisinde temel bir rest API uygulaması bulunmaktadır.
