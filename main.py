@@ -12,7 +12,14 @@ class Toplama(Resource):
         }
 
 
-api.add_resource(Toplama,'/toplama/<int:ilkSayi>/<int:ikinciSayi>')
+class Carpma(Resource):
+    def post(self,ilkSayi,ikinciSayi):
+        carpim=ilkSayi*ikinciSayi
+        return {
+            'sonuc:':carpim
+        }
 
+api.add_resource(Toplama,'/toplama/<int:ilkSayi>/<int:ikinciSayi>')
+api.add_resource(Carpma,'/carpma/<int:ilkSayi>/<int:ikinciSayi>')
 if __name__ == '__main__':
     app.run()
