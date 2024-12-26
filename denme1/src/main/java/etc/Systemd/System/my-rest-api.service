@@ -1,0 +1,13 @@
+[Unit]
+Description=My REST API Service
+After=network.target
+
+[Service]
+User=your_user
+ExecStart=/usr/bin/java -jar /opt/my-rest-api/my-rest-api.jar
+SuccessExitStatus=143
+TimeoutStopSec=10
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
